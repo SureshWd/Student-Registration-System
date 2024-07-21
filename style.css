@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* style for whole container */
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    border: 0.5px solid rgb(6, 6, 6); 
+}
+#container::before{
+    content: "";
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-image: conic-gradient( rgb(170, 170, 238),
+    rgb(136, 240, 136),rgb(242, 164, 177),rgb(220, 220, 97) );
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  
+}
+/* style for heading */
+#container h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+/*  styles for main div which includes input field and also display field*/
+ #mbox{
+    width:90%;
+    height: 80%;
+    margin: 100px auto;
+    display: flex;
+   
+
+ }
+ /* style for input field div/container */
+ .box{
+    width:60%;
+    height: 100%;
+
+
+ }
+ /* style for input class */
+ .input{
+    width: 80%;
+    height: 60%;
+    margin: 40px auto;
+ }
+ /* style for input fields */
+ input{
+    display: block;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid black;
+   padding: 10px;
+    height: 30px;
+    width: 300px;
+    margin: 10px auto;
+ }
+ /* style for span tag */
+.input span{
+    margin-left: 70px;
+    font-size: 20px;
+}
+/* style for button */
+button{
+    display: block;
+    height: 30px;
+    width: 80px;
+    margin: 5px auto;
+    border: none;
+    border-radius: 12px;
+    padding: 8px;
+    background: grey;
+    font-size: 15px;
+    
+}
+/* styles on the button on hovering */
+button:hover{
+    background: rgb(55, 55, 55);
+    transition: 0.5s;
+   
+}
+/* style for store/display area */
+.product{
+    width: 95%;
+    height: 50px;
+    margin: 30px auto;
+    border: 1px solid black;
+    display: flex;
+    gap: 10px;
+}
+/* style for span fields */
+.product span{
+    width: 140px;
+    height: 50px;
+    margin-left: 10px;
+    font-size: 20px; 
+    text-align: center;
+    
+}
+/* style for edit button */
+.edit{
+    width: 60px;
+    font-size: 12px;
+    font-weight: 600;
+
+}
+/* style for delete button */
+.delete{
+    width: 60px;
+    font-size: 12px;
+    font-weight: 600;
+
+}

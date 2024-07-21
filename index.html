@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- container for all the fields -->
+    <div id="container">
+        <!-- heading -->
+        <h1>Student Registration System</h1>
+        <div id="mbox">
+            <div class="box">
+<!-- div for input fields -->
+                <div class="input" autocomplete="off">
+                    <span>Student Name :</span>
+                    <input type="text" id="sname" class="form" required >
+                    <span>Student Id :</span>
+                    <input type="number" id="id" class="form" required>
+                    <span>Email :</span>
+                    <input type="email" id="email" class="form" required>
+                    <span>Contact No. :</span>
+                    <input type="tel" id="contact" class="form" required>
+                </div>
+                <!-- button -->
+                <div id="btnAdd">
+                    <button id="add">Add</button>
+                </div>
+            </div>
+            <div style=" overflow-x: hidden;" id="box">
+<!-- container to store register student data and display the data  -->
+                <div style="font-weight: 700;" class="product">
+                    <span class="item">Name </span>
+                    <span class="item"> Id</span>
+                    <span class="item"> Email</span>
+                    <span class="item">Contact NO. </span>
+                    <span class="item">Actions</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- adding js file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
